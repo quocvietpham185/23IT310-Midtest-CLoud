@@ -13,7 +13,7 @@ router.post('/login', (req, res) => {
     req.session.username = username;
     return res.redirect('/books/add');
   }
-  res.render('auth/login', { error: 'Sai tai khoan hoac mat khau' });
+  res.render('auth/login', { error: 'Sai tài khoản hoặc mật khẩu' });
 });
 
 router.post('/logout', (req, res) => {

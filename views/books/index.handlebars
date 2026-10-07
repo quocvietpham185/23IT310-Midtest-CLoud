@@ -1,14 +1,14 @@
-<h1>Danh sach sach</h1>
+<h1>Danh Sách Sách</h1>
 {{#if error}}<p class="error">{{error}}</p>{{/if}}
 <table>
   <thead>
     <tr>
-      <th>Ma SP</th>
-      <th>Ten sach</th>
-      <th>Tac gia</th>
-      <th>Gia goc</th>
+      <th>Mã SP</th>
+      <th>Tên sách</th>
+      <th>Tác giả</th>
+      <th>Giá gốc</th>
       <th>VAT</th>
-      <th>Gia sau thue</th>
+      <th>Giá sau thuế</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +22,7 @@
       <td>{{this.priceAfterTax}}</td>
     </tr>
     {{else}}
-    <tr><td colspan="6">Chua co sach nao.</td></tr>
+    <tr><td colspan="6">Chưa có sách nào.</td></tr>
     {{/each}}
   </tbody>
 </table>

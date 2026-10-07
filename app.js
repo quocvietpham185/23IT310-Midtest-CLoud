@@ -44,6 +44,6 @@ app.use((req, res, next) => {
 app.use('/', authRoutes);
 app.use('/books', bookRoutes);
 
-app.get('/', (req, res) => res.redirect('/books'));
+app.get('/', (req, res) => res.render('home'));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

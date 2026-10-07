@@ -1,19 +1,19 @@
-<h1>Them sach moi</h1>
+<h1>Thêm Sách Mới</h1>
 {{#if error}}<p class="error">{{error}}</p>{{/if}}
 <form method="POST" action="/books/add">
-  <label>Ma san pham (bat dau bang "{{codePrefix}}")</label>
+  <label>Mã sản phẩm (bắt đầu bằng "{{codePrefix}}")</label>
   <input type="text" name="code" placeholder="{{codePrefix}}..." required />
 
-  <label>Ten sach</label>
+  <label>Tên sách</label>
   <input type="text" name="title" required />
 
-  <label>Tac gia</label>
+  <label>Tác giả</label>
   <input type="text" name="author" required />
 
-  <label>Gia goc</label>
+  <label>Giá gốc</label>
   <input type="number" name="price" min="0" required />
 
-  <p>VAT ap dung: {{vatRate}}%</p>
+  <p>VAT áp dụng: {{vatRate}}%</p>
 
-  <button type="submit">Luu</button>
+  <button type="submit">Lưu</button>
 </form>

@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quan ly Sach</title>
+  <title>Quản Lý Sách</title>
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
   <nav class="navbar">
-    <a href="/">Trang chu</a>
+    <a href="/">Trang chủ</a>
+    <a href="/books">Danh sách sách</a>
     {{#if isLoggedIn}}
+      <a href="/books/add">Thêm sách</a>
       <form action="/logout" method="POST" class="inline-form">
-        <button type="submit">Dang xuat</button>
+        <button type="submit">Đăng xuất</button>
       </form>
     {{else}}
-      <a href="/login">Dang nhap</a>
+      <a href="/login">Đăng nhập</a>
     {{/if}}
   </nav>
 
@@ -23,7 +25,7 @@
   </main>
 
   <footer class="footer">
-    Ho ten: {{footer.fullName}} | MSSV: {{footer.mssv}} | VAT ap dung: {{footer.vatRate}}%
+    Họ tên: {{footer.fullName}} | MSSV: {{footer.mssv}} | VAT áp dụng: {{footer.vatRate}}%
   </footer>
 </body>
 </html>

@@ -26,7 +26,7 @@ router.post('/add', requireLogin, async (req, res) => {
     return res.status(400).render('books/add', {
       codePrefix: CODE_PREFIX,
       vatRate: VAT_RATE,
-      error: `Ma san pham phai bat dau bang "${CODE_PREFIX}"`,
+      error: `Mã sản phẩm phải bắt đầu bằng "${CODE_PREFIX}"`,
     });
   }
 
@@ -47,7 +47,7 @@ router.post('/add', requireLogin, async (req, res) => {
     res.status(400).render('books/add', {
       codePrefix: CODE_PREFIX,
       vatRate: VAT_RATE,
-      error: err.code === 11000 ? 'Ma san pham da ton tai' : err.message,
+      error: err.code === 11000 ? 'Mã sản phẩm đã tồn tại' : err.message,
     });
   }
 });
