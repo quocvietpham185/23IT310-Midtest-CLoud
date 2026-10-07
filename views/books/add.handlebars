@@ -1,0 +1,19 @@
+<h1>Them sach moi</h1>
+{{#if error}}<p class="error">{{error}}</p>{{/if}}
+<form method="POST" action="/books/add">
+  <label>Ma san pham (bat dau bang "{{codePrefix}}")</label>
+  <input type="text" name="code" placeholder="{{codePrefix}}..." required />
+
+  <label>Ten sach</label>
+  <input type="text" name="title" required />
+
+  <label>Tac gia</label>
+  <input type="text" name="author" required />
+
+  <label>Gia goc</label>
+  <input type="number" name="price" min="0" required />
+
+  <p>VAT ap dung: {{vatRate}}%</p>
+
+  <button type="submit">Luu</button>
+</form>
