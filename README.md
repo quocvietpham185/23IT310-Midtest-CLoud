@@ -4,6 +4,11 @@ Ung dung Web Quan ly Sach trien khai tren Cloud: Node.js/Express + Handlebars,
 MongoDB Atlas (2 tai khoan Read/Write rieng biet), stateless session luu tren Atlas,
 va deploy 24/7 tren mot nen tang PaaS (Render).
 
+**Link truy cap:**
+- Demo truc tuyen (chay 24/7 tren Render): https://two3it310-midtest-cloud.onrender.com
+- Tai khoan dang nhap de test chuc nang them sach: lien he tac gia de lay tai khoan demo
+  (khong cong khai tai khoan/mat khau that trong README vi ly do bao mat).
+
 - MSSV: `23IT310` -> Database: `DB_23IT310`
 - Tien to ma san pham bat buoc: 3 ky tu cuoi MSSV = `310`
 - VAT = chu so cuoi MSSV (`0`) + 6 = `6%`
@@ -106,3 +111,5 @@ git push -u origin main
    - `ADMIN_USERNAME`, `ADMIN_PASSWORD`
    - `PORT` (Render tu cung cap, co the bo qua)
 5. Deploy. Render se tu build/start va giu app chay 24/7.
+
+Ung dung da duoc deploy va dang chay tai: https://two3it310-midtest-cloud.onrender.com
