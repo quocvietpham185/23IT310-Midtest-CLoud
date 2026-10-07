@@ -11,8 +11,8 @@ module.exports = {
 
   // 3 ky tu cuoi cua MSSV - tien to bat buoc cua moi ma san pham
   CODE_PREFIX: MSSV.slice(-3),
-  // VAT = chu so cuoi MSSV + 5 (%)
-  VAT_RATE: lastDigit + 5,
+  // VAT = chu so cuoi MSSV + 6 (%)
+  VAT_RATE: lastDigit + 6,
 
   SESSION_SECRET: process.env.SESSION_SECRET || 'change-me',
 

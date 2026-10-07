@@ -6,7 +6,7 @@ va deploy 24/7 tren mot nen tang PaaS (Render).
 
 - MSSV: `23IT310` -> Database: `DB_23IT310`
 - Tien to ma san pham bat buoc: 3 ky tu cuoi MSSV = `310`
-- VAT = chu so cuoi MSSV (`0`) + 5 = `5%`
+- VAT = chu so cuoi MSSV (`0`) + 6 = `6%`
 
 ## 1. Setup MongoDB Atlas (ban tu lam, theo huong dan sau)
 
@@ -85,20 +85,16 @@ Xem bang lenh:
 git log --oneline --graph --all
 ```
 
-## 5. Dua len GitHub (Private) + cap quyen giang vien
+## 5. Dua len GitHub
 
 ```bash
-git remote add origin <URL repo private tren GitHub>
+git remote add origin <URL repo tren GitHub>
 git push -u origin main
 ```
 
-Sau do vao **Settings > Collaborators** cua repo, them tai khoan GitHub cua
-giang vien voi quyen **Read** (hoac Write neu can).
-
 ## 6. Deploy len Render (PaaS, chay 24/7)
 
-1. Tao Web Service moi tren https://render.com, lien ket voi repo GitHub (Private
-   -> can cap quyen Render truy cap repo).
+1. Tao Web Service moi tren https://render.com, lien ket voi repo GitHub.
 2. Build Command: `npm install`
 3. Start Command: `npm start`
 4. Vao tab **Environment**, khai bao cac bien (KHONG ghi truc tiep vao code):
