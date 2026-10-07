@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Segoe UI, Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.navbar {
+  background: #1f2937;
+  padding: 14px 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.navbar a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inline-form {
+  display: inline;
+  margin-left: auto;
+}
+
+.inline-form button {
+  background: none;
+  border: none;
+  color: #f9fafb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.container {
+  max-width: 880px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, button {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 16px 24px;
+  background: #e5e7eb;
+  text-align: center;
+  font-size: 13px;
+}
