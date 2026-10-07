@@ -1,0 +1,28 @@
+<h1>Danh sach sach</h1>
+{{#if error}}<p class="error">{{error}}</p>{{/if}}
+<table>
+  <thead>
+    <tr>
+      <th>Ma SP</th>
+      <th>Ten sach</th>
+      <th>Tac gia</th>
+      <th>Gia goc</th>
+      <th>VAT</th>
+      <th>Gia sau thue</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each books}}
+    <tr>
+      <td>{{this.code}}</td>
+      <td>{{this.title}}</td>
+      <td>{{this.author}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.vatRate}}%</td>
+      <td>{{this.priceAfterTax}}</td>
+    </tr>
+    {{else}}
+    <tr><td colspan="6">Chua co sach nao.</td></tr>
+    {{/each}}
+  </tbody>
+</table>
