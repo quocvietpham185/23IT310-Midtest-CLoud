@@ -9,10 +9,21 @@
 <body>
   <nav class="navbar">
     <a href="/">Trang chu</a>
+    {{#if isLoggedIn}}
+      <form action="/logout" method="POST" class="inline-form">
+        <button type="submit">Dang xuat</button>
+      </form>
+    {{else}}
+      <a href="/login">Dang nhap</a>
+    {{/if}}
   </nav>
 
   <main class="container">
     {{{body}}}
   </main>
+
+  <footer class="footer">
+    Ho ten: {{footer.fullName}} | MSSV: {{footer.mssv}} | VAT ap dung: {{footer.vatRate}}%
+  </footer>
 </body>
 </html>
